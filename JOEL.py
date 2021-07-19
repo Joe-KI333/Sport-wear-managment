@@ -11,7 +11,7 @@ class Bill_App:
     def __init__(self, master):
         self.master=master
         self.master.geometry("1920x1080+-10+0")
-        self.master.title("MY SHOP MANAGEMENT")
+        self.master.title("SPORTs WEAR MANAGEMENT & BILLING SYSTEM")
 
         title=Label(self.master,text="JOEL SPORTs WEAR",bd=12,relief=GROOVE,bg="indian red1",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
         
