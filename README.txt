@@ -2,7 +2,7 @@
 1. This GUI Application main Aim is to showing the python Tkinter GUI module
    uses,that how GUI code is working ,how a Frame/Label/Entry/Color......etc is working
 
-2. This Simple Python Tkinter Module project "Shop Management System" Contain verious feature:- 
+2. This Simple Python Tkinter Module project "Sports Wear Management and Billing System" Contain verious feature:- 
 	a.) first enter customer details
 	b.) after that select item which one you want to buy and enter the quantity
 	c.) then click on "Total" button now you can see in bottom left of this application
@@ -26,8 +26,8 @@
 	h.) Admin Area:- this bottom layout section is for admin/owner for updating shop details/stock etc
 	
 			 enter the 
-					ID ="crpshop123"
-					password="123456789"
+					ID ="JOEL"
+					password="JOEL"
 		
 			 Login this
 			 after that it will create new window for Admin
