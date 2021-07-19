@@ -1,10 +1,10 @@
-# Shop-Management-System--Python-GUI-Tkinter
+# Sports-Wear-Management-&-Billing-System--Python-GUI-Tkinter
 ## Graphic User Interface
 
 1. This GUI Application main Aim is to showing the python Tkinter GUI module
    uses,that how GUI code is working ,how a Frame/Label/Entry/Color......etc is working
 
-2. This Simple Python Tkinter Module project "Shop Management System" Contain verious feature:-
+2. This Simple Python Tkinter Module project "Sports Wear Management & Billing System" Contain verious feature:-
 
 	a.) first enter customer details
 	b.) after that select item which one you want to buy and enter the quantity
