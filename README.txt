@@ -3,7 +3,7 @@
    uses,that how GUI code is working ,how a Frame/Label/Entry/Color......etc is working
 
 2. This Simple Python Tkinter Module project "Sports Wear Management and Billing System" Contain verious feature:- 
-	a.) first enter customer details
+	a.) first enter Bill details
 	b.) after that select item which one you want to buy and enter the quantity
 	c.) then click on "Total" button now you can see in bottom left of this application
 	    there calculation of total product price with GST tax
