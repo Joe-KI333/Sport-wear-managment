@@ -25,7 +25,7 @@ class Bill_App:
         self.legpad=IntVar()
         self.cricketjersey=IntVar()
         
-        # hockey varible
+        # hockey variable
         self.hockeystick=IntVar()
         self.puck=IntVar()
         self.shoulderpads=IntVar()
@@ -33,7 +33,7 @@ class Bill_App:
         self.shoes=IntVar()
         self.keepergloves=IntVar()
         
-        # football drink
+        # football variable
         self.soccerball=IntVar()
         self.uniform=IntVar()
         self.shinguard=IntVar()
@@ -41,7 +41,7 @@ class Bill_App:
         self.gearbags=IntVar()
         self.prakits=IntVar()
         
-        # volleyball varible 
+        # volleyball variable 
         
         self.ball=IntVar()
         self.kneepad=IntVar()
@@ -50,14 +50,14 @@ class Bill_App:
         self.elbowpad=IntVar()
         self.anklebrace=IntVar()
         
-        #product price varible
+        #product price variable
         
         self.cricket_price=StringVar()
         self.hockey_price=StringVar()
         self.football_price=StringVar()
         self.volleyball_price=StringVar()
         
-        # tax varible
+        # tax variable
         
         self.cricket_tax=StringVar()
         self.hockey_tax=StringVar()
@@ -264,7 +264,7 @@ class Bill_App:
         bn_txt=Entry(F8,width=18,textvariable=self.search_bill,font="arial 10 bold",bd=7,relief=SUNKEN).grid(row=0,column=1,padx=30,pady=1)
         search_btn=Button(F8,text="Search",command=self.find_bill,bg="tan1",bd=5,fg="black",width=8,font="arial 12 bold").grid(row=0,column=2)
 
-           #---------------Admin area-----------------------
+           #---------------Admin Zone-----------------------
         F9=LabelFrame(self.master,bd=10,relief=GROOVE,text="ADMIN ZONE ",font=("times new roman",15,"bold"),fg="gold",bg="firebrick1")
         F9.place(x=351,y=672,width=1186,height=80)
             
