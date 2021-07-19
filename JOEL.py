@@ -64,7 +64,7 @@ class Bill_App:
         self.football_tax=StringVar()
         self.volleyball_tax=StringVar()
         
-        #customer details
+        #bill details
         
         self.c_name=StringVar()
         self.c_phon=StringVar()
@@ -80,14 +80,14 @@ class Bill_App:
         
         
         
-        # ------------>>> CUSTOMER DETAILS <<<<<-----------------
-        F0=LabelFrame(self.master,bd=10,relief=GROOVE,text="Customer Details",font=("times new roman",15,"bold"),fg="BROWN",bg="YELLOW")
+        # ------------>>> BILL DETAILS <<<<<-----------------
+        F0=LabelFrame(self.master,bd=10,relief=GROOVE,text="BILL DETAILS",font=("times new roman",15,"bold"),fg="BROWN",bg="YELLOW")
         F0.place(x=0,y=70,width=950)
         
-        cname_label=Label(F0,text="Customer Name",bg="sky blue",font=("times new romen",12,"bold")).grid(row=0,column=0,padx=10,pady=5)
+        cname_label=Label(F0,text="CUSTOMER NAME",bg="sky blue",font=("times new romen",12,"bold")).grid(row=0,column=0,padx=10,pady=5)
         cname_txt=Entry(F0,width=20,textvariable=self.c_name,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=1,pady=5,padx=10)
         
-        cphn_label=Label(F0,text="Phone No.",bg="sky blue",font=("times new romen",12,"bold")).grid(row=0,column=2,padx=10,pady=5)
+        cphn_label=Label(F0,text="CASHIER NAME",bg="sky blue",font=("times new romen",12,"bold")).grid(row=0,column=2,padx=10,pady=5)
         cphn_txt=Entry(F0,width=20,textvariable=self.c_phon,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=3,pady=5,padx=10)
         
          ################################ send email button
@@ -102,36 +102,36 @@ class Bill_App:
 
         
         #----------------->>>>> Cricket frame <<<----------------
-        F2=LabelFrame(self.master,bd=10,relief=GROOVE,text="Cricket",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
+        F2=LabelFrame(self.master,bd=10,relief=GROOVE,text="CRICKET",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
         F2.place(x=5,y=152,width=220,height=373)
         
         
-        bath_txt=Entry(F2,width=2,textvariable=self.bat,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=0,column=1,padx=10,pady=10,sticky=W)
-        bath_label=Label(F2,text="Bat",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=0,column=0,padx=10,pady=10,sticky="w")
-        #face cream
-        facecream_label=Label(F2,text="Cricket Ball",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=1,column=0,padx=10,pady=10,sticky="w")
-        facecream_txt=Entry(F2,width=2,textvariable=self.cricketball,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=1,column=1,padx=10,pady=10,sticky=W)
+        bt_txt=Entry(F2,width=2,textvariable=self.bat,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=0,column=1,padx=10,pady=10,sticky=W)
+        bt_label=Label(F2,text="Bat",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=0,column=0,padx=10,pady=10,sticky="w")
         
-        #Facewash
-        facewash_label=Label(F2,text="Gloves",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=2,column=0,padx=10,pady=10,sticky="w")
-        facewash_txt=Entry(F2,width=2,textvariable=self.gloves,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=2,column=1,padx=10,pady=10,sticky=W)
+        cb_label=Label(F2,text="Cricket Ball",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=1,column=0,padx=10,pady=10,sticky="w")
+        cb_txt=Entry(F2,width=2,textvariable=self.cricketball,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=1,column=1,padx=10,pady=10,sticky=W)
         
-        #hair spray
-        hair_Spry_label=Label(F2,text="Kit Bag",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=3,column=0,padx=10,pady=10,sticky="w")
-        hair_spry_txt=Entry(F2,width=2,textvariable=self.kitbag,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=3,column=1,padx=10,pady=10,sticky=W)
         
-        #Hair gel
-        hair_gel_label=Label(F2,text="Leg Pad",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=4,column=0,padx=10,pady=10,sticky="w")
-        hair_gel_txt=Entry(F2,width=2,textvariable=self.legpad,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=4,column=1,padx=10,pady=10,sticky=W)
+        glv_label=Label(F2,text="Gloves",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=2,column=0,padx=10,pady=10,sticky="w")
+        glv_txt=Entry(F2,width=2,textvariable=self.gloves,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=2,column=1,padx=10,pady=10,sticky=W)
         
-        #bodylotion
-        body_lt_label=Label(F2,text="Cricket Jersey",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=5,column=0,padx=10,pady=10,sticky="w")
-        body_lt_txt=Entry(F2,width=2,textvariable=self.cricketjersey,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5,column=1,padx=10,pady=10,sticky=W)
+        
+        kb_Spry_label=Label(F2,text="Kit Bag",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=3,column=0,padx=10,pady=10,sticky="w")
+        kb_spry_txt=Entry(F2,width=2,textvariable=self.kitbag,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=3,column=1,padx=10,pady=10,sticky=W)
+        
+    
+        pd_gel_label=Label(F2,text="Leg Pad",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=4,column=0,padx=10,pady=10,sticky="w")
+        pd_gel_txt=Entry(F2,width=2,textvariable=self.legpad,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=4,column=1,padx=10,pady=10,sticky=W)
+        
+        
+        jer_lt_label=Label(F2,text="Cricket Jersey",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=5,column=0,padx=10,pady=10,sticky="w")
+        jer_lt_txt=Entry(F2,width=2,textvariable=self.cricketjersey,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5,column=1,padx=10,pady=10,sticky=W)
         
         
         
          #----------------->>>>> Hockey frame <<<----------------
-        F3=LabelFrame(self.master,bd=10,relief=GROOVE,text="Hockey",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
+        F3=LabelFrame(self.master,bd=10,relief=GROOVE,text="HOCKEY",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
         F3.place(x=220,y=152,width=220,height=373)
         
         g1_label=Label(F3,text="Hockey Stick",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=0,column=0,padx=10,pady=10,sticky="w")
@@ -154,7 +154,7 @@ class Bill_App:
         
          
          #----------------->>>>> football frame <<<----------------
-        F4=LabelFrame(self.master,bd=10,relief=GROOVE,text="Football",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
+        F4=LabelFrame(self.master,bd=10,relief=GROOVE,text="FOOTBALL",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
         F4.place(x=440,y=152,width=220,height=373)
         
         c1_label=Label(F4,text="Soccer Ball",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=0,column=0,padx=10,pady=10,sticky="w")
@@ -176,7 +176,7 @@ class Bill_App:
         c6_txt=Entry(F4,width=2,textvariable=self.prakits,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5,column=1,padx=10,pady=10,sticky=W)
         
         #----------------->>>>> Volleyball frame <<<----------------
-        F4=LabelFrame(self.master,bd=10,relief=GROOVE,text="Volleyball",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
+        F4=LabelFrame(self.master,bd=10,relief=GROOVE,text="VOLLEYBALL",font=("times new roman",15,"bold"),fg="red4",bg="deep sky blue")
         F4.place(x=660,y=152,width=230,height=373)
         
         c1_label=Label(F4,text="Ball",font=("times new roman",12,"bold"),fg="black",bg="spring green").grid(row=0,column=0,padx=10,pady=10,sticky="w")
@@ -202,9 +202,9 @@ class Bill_App:
         
         # bill Area ....................................
         
-        F6=LabelFrame(self.master,bd=10,relief=GROOVE)
-        F6.place(x=890,y=152,width=480,height=373)
-        bill_title=Label(F6,text="Bill Area",font="arial 15 bold",bd=7,relief=GROOVE).pack(fill=X)
+        F6=LabelFrame(self.master,bd=10,relief=RAISED,bg="maroon1")
+        F6.place(x=890,y=152,width=480,height=360)
+        bill_title=Label(F6,text="BILL AREA",font="arial 15 bold",bd=7,relief=RAISED,bg="seagreen1").pack(fill=X)
         
         scrol_y=Scrollbar(F6,orient=VERTICAL)
         self.txtarea=Text(F6,yscrollcommand=scrol_y.set)
@@ -256,6 +256,7 @@ class Bill_App:
         exit_btn=Button(btn_frame,text="Exit",command=self.exit_app,bg="indian red",bd=5,fg="black",pady=15,width=10,font="arial 12 bold").grid(row=0,column=3,padx=10,pady=15)
         
         self.welcome_bill()
+        
         #----------------->>>>> bill search frame <<<----------------
         F8=LabelFrame(self.master,bd=10,relief=GROOVE,text="Bill Search ",font=("times new roman",15,"bold"),fg="gold",bg="firebrick1")
         F8.place(x=0,y=672,width=350,height=80)
@@ -281,20 +282,15 @@ class Bill_App:
         a_login=Button(F9,text="Login",command=self.login_page,bg="orchid",bd=5,fg="black",width=12,font="arial 12 bold").grid(row=0,column=5,padx=35)
         
         
-        
-    
-    
-    
-
-  
+     # price given to the items
     
     def total(self):
-        self.c_sp=self.bat.get()*25
-        self.c_fc=self.cricketball.get()*132#*self.find_price("Face cream",self.fcream_clicked.get())
-        self.c_fw=self.gloves.get()*122#*self.find_price("Face wash",self.fwash_clicked.get())
-        self.c_hsp=self.kitbag.get()*154#*self.find_price("Hair Spray",self.hairspray_clicked.get())
-        self.c_hg=self.legpad.get()*45#*self.find_price("Hair gel",self.hairgel_clicked.get())
-        self.c_bl=self.cricketjersey.get()*78#*self.find_price("Bodylotion",self.bodylotion_clicked.get())
+        self.c_sp=self.bat.get()*1000
+        self.c_fc=self.cricketball.get()*60
+        self.c_fw=self.gloves.get()*500
+        self.c_hsp=self.kitbag.get()*5000
+        self.c_hg=self.legpad.get()*400
+        self.c_bl=self.cricketjersey.get()*150
         self.total_cricket_price=float(
                 self.c_sp+
                 self.c_bl+
@@ -310,12 +306,12 @@ class Bill_App:
         
         
         
-        self.g_mg=self.hockeystick.get()*30
+        self.g_mg=self.hockeystick.get()*1500
         self.g_rc=self.puck.get()*70
         self.g_wh=self.shoulderpads.get()*150
         self.g_sg=self.jockstrap.get()*200
-        self.g_fol=self.shoes.get()*100
-        self.g_dl=self.keepergloves.get()*140
+        self.g_fol=self.shoes.get()*1000
+        self.g_dl=self.keepergloves.get()*550
         
         self.total_hockey_price=float(
                 self.g_dl+
@@ -330,12 +326,12 @@ class Bill_App:
         self.hockey_tax.set("Rs. "+str(self.g_tax))
         
         
-        self.cd_mz=self.soccerball.get()*30
-        self.cd_cc=self.uniform.get()*70
+        self.cd_mz=self.soccerball.get()*700
+        self.cd_cc=self.uniform.get()*400
         self.cd_sl=self.shinguard.get()*150
         self.ccd_thu=self.goalie.get()*200
-        self.cd_ft=self.gearbags.get()*100
-        self.cd_ps=self.prakits.get()*140
+        self.cd_ft=self.gearbags.get()*5000
+        self.cd_ps=self.prakits.get()*300
         
         self.total_football_price=float(
                 self.cd_cc+
@@ -349,12 +345,12 @@ class Bill_App:
         self.football_price.set("Rs. "+str(self.total_football_price))
         self.football_tax.set("Rs. "+str(self.cd_tax))
          
-        self.bc_pr=self.ball.get()*30
-        self.bc_o=self.shoe.get()*70
-        self.bc_mc=self.anklebrace.get()*150
-        self.bc_bt=self.kneepad.get()*200
-        self.bc_gd=self.net.get()*100
-        self.bc_sf=self.elbowpad.get()*140
+        self.bc_pr=self.ball.get()*1000
+        self.bc_o=self.shoe.get()*700
+        self.bc_mc=self.anklebrace.get()*250
+        self.bc_bt=self.kneepad.get()*250
+        self.bc_gd=self.net.get()*3000
+        self.bc_sf=self.elbowpad.get()*240
         
         self.total_volleyball_price=float(
                 self.bc_bt+
@@ -398,7 +394,7 @@ class Bill_App:
         self.txtarea.insert(END,"\n_________________________________________\n")
         self.txtarea.insert(END,f"\nBill No. : {self.bill_no.get()}")
         self.txtarea.insert(END,f"\nCustomer Name :   {self.c_name.get()}")
-        self.txtarea.insert(END,f"\nPhone no.:    {self.c_phon.get()}")
+        self.txtarea.insert(END,f"\nCashier Name.:    {self.c_phon.get()}")
         self.txtarea.insert(END,"\n===================================================")
         self.txtarea.insert(END,"\nProducts\t\t       QTY  \t       Price")
         self.txtarea.insert(END,"\n===================================================")
@@ -426,7 +422,7 @@ class Bill_App:
            if self.cricketjersey.get()!=0:
                self.txtarea.insert(END,f"\nCricJersey   \t\t\t{self.cricketjersey.get()}\t    {self.c_bl}")
             
-            #hockey print
+            # hockey print
            if self.hockeystick.get()!=0:
                self.txtarea.insert(END,f"\nHockyStick   \t\t\t{self.soccerball.get()}\t    {self.g_mg}")
            if self.puck.get()!=0:
@@ -441,7 +437,7 @@ class Bill_App:
                self.txtarea.insert(END,f"\nKeepGloves   \t\t\t{self.keepergloves.get()}\t    {self.g_dl}")
     
             
-            #volleyball print
+            # volleyball print
            if self.ball.get()!=0:
                self.txtarea.insert(END,f"\nBall         \t\t\t{self.ball.get()}\t    {self.bc_pr}")
            if self.shoe.get()!=0:
@@ -456,7 +452,7 @@ class Bill_App:
                self.txtarea.insert(END,f"\nAnkleBrace   \t\t\t{self.anklebrace.get()}\t    {self.bc_mc}")
             
             
-            #football print
+            # football print
            if self.soccerball.get()!=0:
                self.txtarea.insert(END,f"\nSoccerBall   \t\t\t{self.soccerball.get()}\t    {self.cd_mz}")
            if self.uniform.get()!=0:
@@ -549,7 +545,7 @@ class Bill_App:
             self.elbowpad.set(0)
             self.anklebrace.set(0)
             
-            #product price varible
+            # product price varible
             
             self.cricket_price.set("")
             self.hockey_price.set("")
@@ -598,7 +594,7 @@ class Bill_App:
          op=messagebox.askyesno("Send bill","Do you want to Send the bill ?")
          if op>0:
              self.bill_data=self.txtarea.get('1.0',END)
-            #fp1=open("bills/"+str(self.bill_no.get())+".txt","w")
+             fp1=open("bills/"+str(self.bill_no.get())+".txt","w")
              msg=self.bill_data
          else:
              return  
@@ -639,15 +635,16 @@ class login_page_window:
     def __init__(self, master1):
         self.master1=master1
         self.master1.geometry("1920x1080+-10+0")
-        self.master1.title("Admin Area")
+        self.master1.title("ADMIN ZONE")
 
         title=Label(self.master1,text="JOEL SPORTs WEAR",bd=12,relief=GROOVE,bg="indianred1",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
         
-        #self.image_section2()
         
         F0=LabelFrame(self.master1,bd=10,relief=GROOVE,bg="yellow")
-        F0.place(x=0,y=73,height=60,width=1537)
-        F1=LabelFrame(self.master1,bd=10,relief=GROOVE,text="MENU",font=("times new roman",15,"bold"),fg="blue",bg="SlateBlue1")
+        F0.place(x=0,y=73,height=60,width=1370)
+        ad_title=Label(F0,text="ADMIN ZONE",font="arial 15 bold",bd=10,relief=FLAT,bg="YELLOW").pack(fill=X)
+
+        F1=LabelFrame(self.master1,bd=10,relief=RAISED,text="MENU",font=("times new roman",15,"bold"),fg="TURQUOISE1",bg="SlateBlue1")
         F1.place(x=0,y=133,width=230,height=600)
         
         
@@ -661,16 +658,15 @@ class login_page_window:
         
         
         
-        F3=LabelFrame(self.master1,bd=10,text="Bottom",relief=GROOVE,bg="sky blue")
+        F3=LabelFrame(self.master1,bd=10,text="Bottom",relief=GROOVE,bg="GREEN")
         F3.place(x=0,y=733,width=1537,height=60)
         
+    
+    
+        #........................# Datapad Area # ....................................
         
-        
-        
-        # Datapad Area ....................................
-        
-        F4=LabelFrame(self.master1,bd=10,relief=GROOVE)
-        F4.place(x=780,y=133,width=757,height=600)
+        F4=LabelFrame(self.master1,bd=10,relief=RAISED ,bg="MAROON1")
+        F4.place(x=295,y=133,width=800,height=600)
         bill_title=Label(F4,text="DATA PAD",font="arial 15 bold",bd=10,relief=GROOVE).pack(fill=X)
         
         scrol_y=Scrollbar(F4,orient=VERTICAL)
@@ -680,24 +676,6 @@ class login_page_window:
         self.txtarea.pack(fill=BOTH,expand=1)
         
         self.welcome_bill_admin()
-        
-        
-        
-        #---------------------------------------------
-        
-        
-        
-        
-        
-        
-        img1=Image.open("JO.jpg")
-        pic1=ImageTk.PhotoImage(img1)
-        F2=LabelFrame(self.master1,bd=10,relief=GROOVE,bg="sky blue")
-        F2.place(x=230,y=133,width=550,height=600)
-        
-        F2_label1=Label(F2,image=pic1)
-        F2_label1.image=pic1
-        F2_label1.pack()
 
         
 
@@ -715,13 +693,13 @@ class login_page_window:
         f1=open("stock.csv","r",encoding='utf-8-sig')
         
         #self.txtarea.insert(END,f1.read())
-        self.txtarea.insert(END,"|| Product || \t\t\t\t\t\t ||Quantity||")
+        self.txtarea.insert(END,"|| Product || \t\t\t\t\t\t||Quantity||")
         self.txtarea.insert(END,"\n_________________________________________________________________________________________\n")
         for i in f1:
             data=i.split(",")
-        #    print((data[0],data[1]))
+            print((data[0],data[1]))
             
-            self.txtarea.insert(END,"\n"+data[0]+"\t\t\t\t\t\t "+data[1])
+            self.txtarea.insert(END,"\n"+data[0]+"\t\t\t\t\t\t"+data[1])
         
         f1.close()
     def clear_admin_notebook(self):
@@ -735,8 +713,7 @@ class login_page_window:
         for i in os.listdir("bills/"):
            self.txtarea.insert(END,str(j)+".\t"+str(i)+"\n\n")
            j+=1
-    def Update_stock(self):
-         #os.startfile('stock.csv','r')            
+    def Update_stock(self):           
          p=Popen('stock.csv',shell=True)       
         
         
