@@ -520,7 +520,7 @@ class Bill_App:
             self.legpad.set(0)
             self.cricketjersey.set(0)
             
-            # hockey varible
+            # hockey variable
             self.hockeystick.set(0)
             self.puck.set(0)
             self.shoulderpads.set(0)
@@ -536,7 +536,7 @@ class Bill_App:
             self.gearbags.set(0)
             self.prakits.set(0)
             
-            # volleyball varible 
+            # volleyball variable 
             
             self.ball.set(0)
             self.kneepad.set(0)
@@ -545,21 +545,21 @@ class Bill_App:
             self.elbowpad.set(0)
             self.anklebrace.set(0)
             
-            # product price varible
+            # product price variable
             
             self.cricket_price.set("")
             self.hockey_price.set("")
             self.football_price.set("")
             self.volleyball_price.set("")
             
-            # tax varible
+            # tax variable
             
             self.cricket_tax.set("")
             self.hockey_tax.set("")
             self.football_tax.set("")
             self.volleyball_tax.set("")
             
-            #customer details
+            #Bill details
             
             self.c_name.set("")
             self.c_cn.set("")
