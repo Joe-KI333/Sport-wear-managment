@@ -6,11 +6,11 @@
 
 2. This Simple Python Tkinter Module project "Sports Wear Management & Billing System" Contain verious feature:-
 
-	a.) first enter Bill details
-	b.) after that select item which one you want to buy and enter the quantity
+	a.) First enter Bill details
+	b.) After that select item which one you want to buy and enter the quantity
 	c.) then click on "Total" button now you can see in bottom left of this application
 	    there calculation of total product price with GST tax
-	d.) after that click on "Bill Generate" button. now you can see the bill of your
+	d.) After that click on "Bill Generate" button. now you can see the bill of your
 	    product in center right feild and save this bill
 	e.) You can send this Bill via Email for that go "send bill via Email" section 
 	    top right  and Enter your Email and send it (make sure internet connection
