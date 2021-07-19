@@ -403,7 +403,7 @@ class Bill_App:
     def bill_area(self):
        
        if self.c_name.get()=="" or self.c_cn.get()=="":
-           messagebox.showerror("Error","Fill Customer details")
+           messagebox.showerror("Error","Fill Bill details")
        elif self.cricket_price=="Rs. 0.0" and self.hockey_price=="Rs. 0.0" and self.football_price=="Rs. 0.0" and self.volleyball_price=="Rs. 0.0":
            messagebox.showerror("Error","No product purchased")
        else: 
