@@ -64,10 +64,10 @@ class Bill_App:
         self.football_tax=StringVar()
         self.volleyball_tax=StringVar()
         
-        #bill details
+        #bills details
         
         self.c_name=StringVar()
-        self.c_phon=StringVar()
+        self.c_cn=StringVar()
         self.c_mail=StringVar()
         self.bill_no=StringVar()
         self.search_bill=StringVar()
@@ -88,7 +88,7 @@ class Bill_App:
         cname_txt=Entry(F0,width=20,textvariable=self.c_name,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=1,pady=5,padx=10)
         
         cphn_label=Label(F0,text="CASHIER NAME",bg="sky blue",font=("times new romen",12,"bold")).grid(row=0,column=2,padx=10,pady=5)
-        cphn_txt=Entry(F0,width=20,textvariable=self.c_phon,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=3,pady=5,padx=10)
+        cphn_txt=Entry(F0,width=20,textvariable=self.c_cn,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=3,pady=5,padx=10)
         
          ################################ send email button
         F1=LabelFrame(self.master,bd=10,relief=GROOVE,text="Send the Bill via EMAIL",font=("times new roman",15,"bold"),fg="BROWN",bg="YELLOW")
@@ -394,7 +394,7 @@ class Bill_App:
         self.txtarea.insert(END,"\n_________________________________________\n")
         self.txtarea.insert(END,f"\nBill No. : {self.bill_no.get()}")
         self.txtarea.insert(END,f"\nCustomer Name :   {self.c_name.get()}")
-        self.txtarea.insert(END,f"\nCashier Name.:    {self.c_phon.get()}")
+        self.txtarea.insert(END,f"\nCashier Name.:    {self.c_cn.get()}")
         self.txtarea.insert(END,"\n===================================================")
         self.txtarea.insert(END,"\nProducts\t\t       QTY  \t       Price")
         self.txtarea.insert(END,"\n===================================================")
@@ -402,7 +402,7 @@ class Bill_App:
         
     def bill_area(self):
        
-       if self.c_name.get()=="" or self.c_phon.get()=="":
+       if self.c_name.get()=="" or self.c_cn.get()=="":
            messagebox.showerror("Error","Fill Customer details")
        elif self.cricket_price=="Rs. 0.0" and self.hockey_price=="Rs. 0.0" and self.football_price=="Rs. 0.0" and self.volleyball_price=="Rs. 0.0":
            messagebox.showerror("Error","No product purchased")
@@ -562,7 +562,7 @@ class Bill_App:
             #customer details
             
             self.c_name.set("")
-            self.c_phon.set("")
+            self.c_cn.set("")
             self.c_mail.set("")
             self.bill_no.set("")
             self.search_bill.set("")
