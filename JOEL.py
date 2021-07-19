@@ -98,7 +98,7 @@ class Bill_App:
         cmail_txt=Entry(F1,width=20,textvariable=self.c_mail,font="arial 15",bd=7,relief=SUNKEN).grid(row=0,column=5,pady=5,padx=10)
         
         #bn_txt=Entry(F9,width=18,textvariable=self.search_bill,font="arial 10 bold",bd=7,relief=SUNKEN).grid(row=0,column=1,padx=30,pady=1)
-        send_btn=Button(F1,text="Send",command=self.check_mail,bg="red",bd=5,fg="black",width=8,font="arial 12 bold").grid(row=0,column=7) 
+        send_btn=Button(F1,text="SEND",command=self.check_mail,bg="red",bd=5,fg="black",width=8,font="arial 12 bold").grid(row=0,column=7) 
 
         
         #----------------->>>>> Cricket frame <<<----------------
@@ -265,7 +265,7 @@ class Bill_App:
         search_btn=Button(F8,text="Search",command=self.find_bill,bg="tan1",bd=5,fg="black",width=8,font="arial 12 bold").grid(row=0,column=2)
 
            #---------------Admin area-----------------------
-        F9=LabelFrame(self.master,bd=10,relief=GROOVE,text="Admin area ",font=("times new roman",15,"bold"),fg="gold",bg="firebrick1")
+        F9=LabelFrame(self.master,bd=10,relief=GROOVE,text="ADMIN ZONE ",font=("times new roman",15,"bold"),fg="gold",bg="firebrick1")
         F9.place(x=351,y=672,width=1186,height=80)
             
         
